@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>She Googled and She Went</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>She Googled and She Went</h1>
+            </div>
+        </div>
+        <hr class="hr-top">
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-primary text-center">About me</h2>
+                <img src="sheryl.jpg" alt="sherylsoh" class="profile">
+                <p class="text-center">Hi, I'm Sheryl! <br> I enjoy traveling and writing stories about kindness and adventure.</p>
+            </div>
+        </div>
+
+        <a href="#row2">
+            <hr class="hr-regular" id="row2">
+        </a>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class> Pick a destination</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="hover-box">
+
+                    <div class="hover-card">
+                        <span class="country"> Bolivia </span>
+                        <img src='Bolivia.jpg' alt="Bolivia" class='location wow rollIn' data-wow-delay="0.6s">
+
+                    </div>
+
+                    <div class="hover-card">
+                        <span class="country"> India</span>
+                        <img src='India.jpg' alt="India" class='location wow rollIn' data-wow-delay="0.3s">
+                    </div>
+
+                    <div class="hover-card">
+                        <span class="country"> Indonesia </span>
+                        <img src='Indonesia.png' alt="Indonesia" class='location wow rollIn'>
+                    </div>
+
+                    <div class="hover-card">
+                        <span class="country"> Peru </span>
+                        <img src="Peru.jpg" alt="Peru" class='location wow rollIn' data-wow-delay="0.6s">
+                    </div>
+
+                    <div class="hover-card">
+                        <span class="country"> Spain </span>
+                        <img src='Spain.png' alt="Spain" class='location wow rollIn' data-wow-delay="0.3s">
+                    </div>
+
+                    <div class="hover-card">
+                        <span class="country"> Thailand </span>
+                        <img src='Thailand.png' alt="Thailand" class='location wow rollIn'>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#row3">
+            <hr class="hr-regular" id="row3">
+        </a>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="panel panel-default text-muted" style="margin-top: 2rem">
+                    <div class="panel-body">
+                        <h2 class="text-primary text-center js-form-response">Join the mailing list<br> to read more stories!</h2>
+                        <form class="js-hidden" name="MyForm" action="https://script.google.com/macros/s/AKfycbwpaJJzPcasnqazbz3JIWvTH-sIZbUmFIia-bX8nBpQS93FlVs/exec"
+                            method="post">
+
+                            <!-- <p id="alert-id"> Thank you for signing up! </p> -->
+                            <div class="form-group">
+                                <label for="name-id">Name</label>
+                                <input type="text" name="NAME" class="form-control" id="name-id" placeholder="Tom Jones" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-id">Email</label>
+                                <input type="text" name="EMAIL" class="form-control" id="email-id" placeholder="hello@abc.com" required>
+                            </div>
+
+
+                            <div class="form-group">
+                                <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="list-inline">
+                    <li><a href="#"><i class="fa fa-facebook-official fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-snapchat fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google fa-2x"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/wow/1.1.2/wow.min.js"></script>
+    <script>
+       new WOW.init();
+    </script>
+    <script src="page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import "compass/css3";
+
+/* html,
+body {
+    height:100%;
+    width:100%; 
+} usually only used when background is image */
+
+body{
+    font-family: 'Indie Flower', cursive;
+}
+
+h1{
+    font-weight: 700;
+    text-align: center;
+    color: navy;
+    font-size: 4em;
+    height: min-content;
+    border:0px;
+    margin: 0.4em auto;
+    padding:0px;    
+}
+
+hr {
+    color:navy;
+    margin: 50px auto;
+    padding: 0;
+    max-width: 700px;
+    border-top: solid 5px;
+    text-align: center;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.hr-top::after{
+    content: "\f072";
+    display: inline-block;
+    position: relative;
+    top: -0.6em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: 4em;
+    font-family:FontAwesome;
+    color:navy;
+    background-color: white;
+}
+
+.hr-regular::after{
+    content: "\f103";
+    display: inline-block;
+    position: relative;
+    top: -0.6em; 
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    font-size: 4em;
+    font-family:FontAwesome;
+    color:#008B8B;
+    background-color: white;
+    border-radius:50%;
+    animation: pulse 1s infinite alternate;
+} 
+ 
+.hover-card{
+    height:200px;
+    width:200px;
+    display:block;
+    flex: 0 0 200px;
+    margin:0 12px 12px 12px;
+    transition: all 1s;
+}
+
+.hover-box{
+    flex-wrap:wrap;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin: auto;
+    max-width: 700px;  
+}
+
+.location {
+    height:200px;
+    width:200px;
+    border-radius: 80%;
+    margin:0;
+    display:block;
+}
+
+.hover-card:hover .location{    
+    display: none;
+}
+
+p {
+    position:relative;
+    text-align:center;
+    vertical-align: top;
+    color: navy;
+    margin:0;
+    padding: 10px;
+    font-size:1.5em;
+}
+
+.country {
+    display:none;
+    color: black;
+    font-weight:400;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    line-height:200px;  
+}
+
+.hover-card:hover .country{
+    display: block;
+    cursor: pointer;
+}
+
+h2 {
+    color:navy;
+    font-size: 2em;
+    padding-bottom:2px;
+    margin:auto;
+    text-align:center;
+}
+
+.profile {
+    height: 200px;
+    width: 200px;
+    border-radius:80%;
+    display:block;
+    margin:auto;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #008B8B;
+  border-color: #008B8B;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  border: 1px solid grey;
+  border-radius: 300px;
+  font-weight: 700;
+  font-size:1.2em;
+  line-height:20px;
+  padding: 10px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: white;
+  background-color: navy;
+  border-color: navy;
+}
+
+.form{
+	padding: 10px;
+	margin: auto;
+    border: 1px solid black;
+}
+
+.form-group{
+    margin: 20px auto;
+    max-width:500px;
+}
+
+
+input[type]{
+	-webkit-appearance: none;
+	width:100%;
+	height:2rem;
+    font-size:1.5rem;
+    font-family:'Indie Flower', cursive;
+	
+}
+
+input[type=text] {
+    border:none;
+	border-bottom:1px solid #008B8B;
+
+}
+
+input[type=text]:focus{
+	outline:none;
+	border: black;
+	color: #008B8B;
+
+}
+
+.list-inline {
+  padding:auto;
+  margin: 50px auto;
+  list-style: none;
+  text-align: center;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.fa {
+    color:navy;
+}
+
+.fa:hover {
+    filter:grayscale();
+}
+
+.confirmation {
+    display:none;
+}
